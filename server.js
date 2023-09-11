@@ -87,14 +87,14 @@ app.use(
     secret: 'my secret',
     resave: false,
     saveUninitialized: false,
-
-    // secret: 'SESS_SECRET',
-    // resave: false,
-    // saveUninitialized: false,
     store: store,
     cookie: {
-      sameSite: 'none',
-      secure: true,
+      // // deploy
+      // sameSite: 'none',
+      // secure: true,
+      // chạy localhost
+      sameSite: 'lax',
+      secure: false,
       maxAge: 1000 * 60 * 60,
       // httpOnly: true,
     },
