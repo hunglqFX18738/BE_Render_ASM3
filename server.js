@@ -90,11 +90,11 @@ app.use(
     store: store,
     cookie: {
       // // deploy
-      // sameSite: 'none',
-      // secure: true,
+      sameSite: 'none',
+      secure: true,
       // chạy localhost
-      sameSite: 'lax',
-      secure: false,
+      // sameSite: 'lax',
+      // secure: false,
       maxAge: 1000 * 60 * 60,
       // httpOnly: true,
     },
